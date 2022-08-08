@@ -11,87 +11,91 @@
 <body>
   <main class="container" class="padre">
     <header class="header">
-      <img src="images/Logotexto.jpg" widht="150" height="150" alt="">
+      <div class="fotologo">
+        <img src="images/Logotexto.jpg" >
+      </div>
+      
       <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary" class="nav">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="opciones">   
-        <ul class="nav navbar-nav navbar-center">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/asesorias.html">Asesorías</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/cursos.html">Cursos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/ubicacion.html">Ubicación</a>
-          </li>  
-          <li class="nav-item">
-            <a class="nav-link" href="pages/contacto.html">Contacto</a>
-          </li>            
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-    <section id="section1" class="row" class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
-      <h2 class="animate__wobble">Bienvenidos</h2>
-      <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="https://loremflickr.com/620/340/brazil,rio?a" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://loremflickr.com/620/340/brazil,rio?b" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://loremflickr.com/620/340/brazil,rio?c" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://loremflickr.com/620/340/brazil,rio?d" alt="Four slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://loremflickr.com/620/340/brazil,rio?e" alt="Five slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="opciones">   
+          <ul class="nav navbar-nav navbar-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/asesorias.html">Asesorías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/ubicacion.html">Ubicación</a>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>            
+          </ul>
         </div>
-      </div>
+      </nav>
+    </header>
 
+    <section id="section1">
+      <h2 class="animate__wobble mb-5">Bienvenidos</h2>
+      <div class="foto">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 mt-5 mb-5" >
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000" >
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner" class="foto">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://loremflickr.com/620/340/brazil,rio?a" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://loremflickr.com/620/340/brazil,rio?b" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://loremflickr.com/620/340/brazil,rio?c" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://loremflickr.com/620/340/brazil,rio?d" alt="Four slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://loremflickr.com/620/340/brazil,rio?e" alt="Five slide">
+              </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+          </div>
+        </div>
       <br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo optio dolore eius dolor, fuga, veniam voluptatem et suscipit quas facere tempora incidunt cupiditate officia accusantium maiores quam officiis quisquam eum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nostrum officia enim laudantium, vitae fugiat, ducimus ab debitis itaque, alias optio voluptate? Laborum nemo odio illo magni illum iure aut! Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Nostrum doloremque, aperiam accusamus. Quod, consequatur! Nam distinctio laborum eius officiis, explicabo ipsa, nostrum at aperiam adipisci delectus iusto deserunt repellendus, harum. </p>
     </section>
 
-    <section id="section2" class="row" class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+    <section id="section2">
       <h2>Nosotros</h2>
-      <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4" class="imagen">
-          <img src="images/nosotros.jpg" height="200" width="200" class="foto"> 
+      <div class="foto">
+          <img src="images/nosotros.jpg" class="rotate"> 
       </div>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo optio dolore eius dolor, fuga, veniam voluptatem et suscipit quas facere tempora incidunt cupiditate officia accusantium maiores quam officiis quisquam eum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nostrum officia enim laudantium, vitae fugiat, ducimus ab debitis itaque, alias optio voluptate? Laborum nemo odio illo magni illum iure aut! Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Nostrum doloremque, aperiam accusamus. Quod, consequatur! Nam distinctio laborum eius officiis, explicabo ipsa, nostrum at aperiam adipisci delectus iusto deserunt repellendus, harum. </p>
     </section>
 
-    <section id="section3" class="row" class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+    <section id="section3">
       <h2>Nuestro Equipo</h2>
-      <div class="imagen">
-        <img src="images/equipo.jpg" height="200" width="200" class="foto"> 
+      <div class="foto">
+        <img src="images/equipo.jpg" class="rotate"> 
       </div>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo optio dolore eius dolor, fuga, veniam voluptatem et suscipit quas facere tempora incidunt cupiditate officia accusantium maiores quam officiis quisquam eum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nostrum officia enim laudantium, vitae fugiat, ducimus ab debitis itaque, alias optio voluptate? Laborum nemo odio illo magni illum iure aut! Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Nostrum doloremque, aperiam accusamus. Quod, consequatur! Nam distinctio laborum eius officiis, explicabo ipsa, nostrum at aperiam adipisci delectus iusto deserunt repellendus, harum. </p>    
     </section>
@@ -99,8 +103,8 @@
 
   <footer id="pie" class="container"> 
 		<div class="row"> 
-			<div class="col-12 col-sm-10 col-md-10 col-lg-8 col-xl-8">
-			<b>Derechos reservados XXXXXX 2022. Desarrollado por FC</b>     
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<b>Derechos reservados XXXXXX 2022. Desarrollado por FC</b>
 			</div>
 		</div>
 	</footer>

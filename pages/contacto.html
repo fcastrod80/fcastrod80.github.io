@@ -10,102 +10,113 @@
 </head>
 <main class="container" class="padre">
 		<header class="header">
-		<img src="../images/Logotexto.jpg" widht="150" height="150" alt="">
-		<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary" class="nav">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="opciones">   
-			<ul class="nav navbar-nav navbar-center">
-				<li class="nav-item">
-					<a class="nav-link" href="../index.html">Inicio</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="asesorias.html">Asesorías</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="cursos.html">Cursos</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="ubicacion.html">Ubicación</a>
-					</li>  
-					<li class="nav-item">
-					<a class="nav-link" href="contacto.html">Contacto</a>
-					</li>            
-			</ul>
+		<div class="fotologo">
+			<img src="../images/Logotexto.jpg" >
 		</div>
+
+		<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary" class="nav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="opciones">   
+				<ul class="nav navbar-nav navbar-center">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="asesorias.html">Asesorías</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="cursos.html">Cursos</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="ubicacion.html">Ubicación</a>
+						</li>  
+						<li class="nav-item">
+						<a class="nav-link" href="contacto.html">Contacto</a>
+					</li>            
+				</ul>
+			</div>
 		</nav>
 		</header>
-
-		<form method="POST" action="/index.php" class="needs-validation" novalidate class="formulario">
-			<h2 class="animate__wobble">Formulario de Contacto</h2>
-			<div class="form-row mt-5">
-				<div class="col-md-4 mb-3">
-					<label for="validarNombre">Nombre:<span class="red">*</span></label>
-					<input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+		
+		<section>
+			<div class="form" >
+			<form method="POST" action="/index.php" class="needs-validation" novalidate class="formulario" .form-horizontal>
+				<h2 class="animate__wobble">Formulario de Contacto</h2>
+				
+				<div class="form-row">
+					<div class="col-12 mb-3 text-center">
+						<label for="validarNombre">Nombre:<span class="red">*</span></label>
+						<input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-12 mb-3 text-center">
+						<label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+						<input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-12 mb-3 text-center">
+						<label for="validarEmail">Email:<span class="red">*</span></label>
+						<input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-12 mb-3 text-center">
+						<label for="validarTelefono">Teléfono:</label>
+						<input type="number" class="form-control" id="validarTelefono" name="validarTelefono" max="999999999">
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-12 mb-3 text-center">
+						<label for="validarTema">Tema:<span class="red">*</span></label>
+						<select class="custom-select" id="validarTema" name="validarTema" required>
+							<option selected disabled value="">Selecciona...</option>
+							<option value="Problema con maquetar con Bootstrap">Problema con maquetar con Bootstrap</option>
+							<option value="Envío de segundo avance Proyecto Final">Envío de segundo avance Proyecto Final</option>
+							<option value="No sé que hacer">No sé que hacer</option>
+							<option value="Otros varios">Otros varios</option>
+						</select>
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-12 mb-3 text-center">
+						<label for="validarAsunto">Asunto:</label>
+						<input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
+					</div>
+				</div>
+			
+				<div class="form-row">
+					<div class="col-12 mb-3 text-center">
+						<label for="validationMensaje">Mensaje:<span class="red">*</span></label>
+						<textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25" required></textarea>
+					</div>
+				</div>
+			
+				<div class="form-group">
+					<div class="col-12 mb-3">
+						<button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+						<button class="btn btn-success" type="reset" name="reset">Limpiar</button>
+					</div>
 				</div>
 			</div>
-		
-			<div class="form-row">
-				<div class="col-md-4 mb-3">
-					<label for="validarApellidos">Apellidos:<span class="red">*</span></label>
-					<input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
-				</div>
-			</div>
-		
-			<div class="form-row">
-				<div class="col-md-4 mb-3">
-					<label for="validarEmail">Email:<span class="red">*</span></label>
-					<input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
-				</div>
-			</div>
-		
-			<div class="form-row">
-				<div class="col-md-4 mb-3">
-					<label for="validarTelefono">Teléfono:</label>
-					<input type="number" class="form-control" id="validarTelefono" name="validarTelefono" max="999999999">
-				</div>
-			</div>
-		
-			<div class="form-row">
-				<div class="col-md-4 mb-3">
-					<label for="validarTema">Tema:<span class="red">*</span></label>
-					<select class="custom-select" id="validarTema" name="validarTema" required>
-						<option selected disabled value="">Selecciona...</option>
-						<option value="Problema con maquetar con Bootstrap">Problema con maquetar con Bootstrap</option>
-						<option value="Envío de segundo avance Proyecto Final">Envío de segundo avance Proyecto Final</option>
-						<option value="No sé que hacer">No sé que hacer</option>
-						<option value="Otros varios">Otros varios</option>
-					</select>
-				</div>
-			</div>
-		
-			<div class="form-row">
-				<div class="col-md-4 mb-3">
-					<label for="validarAsunto">Asunto:</label>
-					<input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
-				</div>
-			</div>
-		
-			<div class="form-group col-md-4 mb-3">
-				<label for="validationMensaje">Mensaje:<span class="red">*</span></label>
-				<textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25" required></textarea>
-			</div>
-		
-			<div class="form-group col-md-4 mb-3">
-				<button class="btn btn-primary" type="submit" name="submit">Enviar</button>
-				<button class="btn btn-success" type="reset" name="reset">Limpiar</button>
-			</div>
-		
-		</form>
-	
+			
+			</form>
+		</section>
 		<p><b>Gracias por comunicarse con nosotros</b></p>
 	
 	</main>	
 
 	<footer id="pie" class="container"> 
 		<div class="row"> 
-			<div class="col-12 col-sm-10 col-md-10 col-lg-8 col-xl-8">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 			<b>Derechos reservados XXXXXX 2022. Desarrollado por FC</b>     
 			</div>
 		</div>
